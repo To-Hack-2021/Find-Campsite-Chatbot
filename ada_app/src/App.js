@@ -7,11 +7,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-<<<<<<< HEAD
           Edit <code>src/App.js</code> and save to reload.This is ADA app
-=======
           React is spinning <code>src/App.js</code> and save to reload.
->>>>>>> eb33993255e20140610e4df5824abf58478f94b7
         </p>
         <a
           className="App-link"
