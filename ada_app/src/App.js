@@ -2,6 +2,7 @@
 import './App.css';
 import React, {Component} from 'react';
 import XMLParser from 'react-xml-parser'
+
 class App extends Component{
 constructor(props){
   super(props);
@@ -38,14 +39,16 @@ render() {
 
   if (!isLoaded)
       return <div>Loading...</div>;
-
   return (
       <div className="App">
           <ul>
               {items.map(item => (
-                  <li key={item.id}>
-                      Name: {item.attributes.facilityName}
-                  </li>
+                  <ul key={item.id}>
+                      Name: {item.attributes.faciltyName}
+                      Photo: 
+                  <img src={"https://www.reserveamerica.com/" + item.attributes.faciltyPhoto}/>
+                  </ul>
+
               ))}
           </ul>
       </div>
