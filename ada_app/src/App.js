@@ -44,9 +44,11 @@ render() {
           <ul>
               {items.map(item => (
                   <ul key={item.id}>
-                      Name: {item.attributes.faciltyName}
-                      Photo: 
-                  <img src={"https://www.reserveamerica.com/" + item.attributes.faciltyPhoto}/>
+                    
+                  <li>Name: {item.attributes.facilityName}</li>
+                  <li>Photo: 
+                  <img src={"https://www.reserveamerica.com/" + item.attributes.faciltyPhoto}/></li>    
+                  <li></li>    
                   </ul>
 
               ))}
